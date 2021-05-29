@@ -78,7 +78,7 @@ with DAG(
 
     def extract_csv(**kwargs):
         import time
-        List_of_days = pd.read_csv('days.csv').loc[430:440]['days']
+        List_of_days = pd.read_csv('days.csv')['days']
         Start=time.time()
         DF_all=[]
         for Day in List_of_days:
@@ -158,6 +158,7 @@ with DAG(
         python_callable=to_db,
         dag=dag
     )
+
     install_deps >> generate_days_operator
     generate_days_operator >> generate_initial_data_operator
     generate_initial_data_operator >> generate_plot_and_data_operator

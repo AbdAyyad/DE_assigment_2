@@ -1,0 +1,24 @@
+[2021-05-27 11:30:45,691] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: assignment_2.generate_plot_and_data_operator 2021-05-27T11:20:22.944851+00:00 [queued]>
+[2021-05-27 11:30:45,709] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: assignment_2.generate_plot_and_data_operator 2021-05-27T11:20:22.944851+00:00 [queued]>
+[2021-05-27 11:30:45,709] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-05-27 11:30:45,709] {taskinstance.py:1068} INFO - Starting attempt 1 of 2
+[2021-05-27 11:30:45,709] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-05-27 11:30:45,718] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): generate_plot_and_data_operator> on 2021-05-27T11:20:22.944851+00:00
+[2021-05-27 11:30:45,726] {standard_task_runner.py:52} INFO - Started process 1609 to run task
+[2021-05-27 11:30:45,730] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'assignment_2', 'generate_plot_and_data_operator', '2021-05-27T11:20:22.944851+00:00', '--job-id', '49', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/code.py', '--cfg-path', '/tmp/tmp7ecgulkp', '--error-file', '/tmp/tmp583pq8nw']
+[2021-05-27 11:30:45,731] {standard_task_runner.py:77} INFO - Job 49: Subtask generate_plot_and_data_operator
+[2021-05-27 11:30:45,774] {logging_mixin.py:104} INFO - Running <TaskInstance: assignment_2.generate_plot_and_data_operator 2021-05-27T11:20:22.944851+00:00 [running]> on host 41db0a5e0c84
+[2021-05-27 11:30:45,825] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=assignment_2
+AIRFLOW_CTX_TASK_ID=generate_plot_and_data_operator
+AIRFLOW_CTX_EXECUTION_DATE=2021-05-27T11:20:22.944851+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-05-27T11:20:22.944851+00:00
+[2021-05-27 11:30:45,951] {__init__.py:482} WARNING - Matplotlib created a temporary config/cache directory at /tmp/matplotlib-f4dfs238 because the default path (/home/airflow/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2021-05-27 11:30:46,174] {font_manager.py:1423} INFO - Generating new fontManager, this may take some time...
+[2021-05-27 11:30:48,968] {python.py:151} INFO - Done. Returned value was: None
+[2021-05-27 11:30:48,981] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=assignment_2, task_id=generate_plot_and_data_operator, execution_date=20210527T112022, start_date=20210527T113045, end_date=20210527T113048
+[2021-05-27 11:30:49,009] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-05-27 11:30:49,030] {local_task_job.py:151} INFO - Task exited with return code 0

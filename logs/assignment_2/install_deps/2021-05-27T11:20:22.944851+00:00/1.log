@@ -1,0 +1,61 @@
+[2021-05-27 11:20:26,211] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: assignment_2.install_deps 2021-05-27T11:20:22.944851+00:00 [queued]>
+[2021-05-27 11:20:26,257] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: assignment_2.install_deps 2021-05-27T11:20:22.944851+00:00 [queued]>
+[2021-05-27 11:20:26,258] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-05-27 11:20:26,258] {taskinstance.py:1068} INFO - Starting attempt 1 of 2
+[2021-05-27 11:20:26,258] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-05-27 11:20:26,279] {taskinstance.py:1087} INFO - Executing <Task(BashOperator): install_deps> on 2021-05-27T11:20:22.944851+00:00
+[2021-05-27 11:20:26,302] {standard_task_runner.py:52} INFO - Started process 812 to run task
+[2021-05-27 11:20:26,309] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'assignment_2', 'install_deps', '2021-05-27T11:20:22.944851+00:00', '--job-id', '46', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/code.py', '--cfg-path', '/tmp/tmpck6admto', '--error-file', '/tmp/tmpklb8ers2']
+[2021-05-27 11:20:26,310] {standard_task_runner.py:77} INFO - Job 46: Subtask install_deps
+[2021-05-27 11:20:26,406] {logging_mixin.py:104} INFO - Running <TaskInstance: assignment_2.install_deps 2021-05-27T11:20:22.944851+00:00 [running]> on host 41db0a5e0c84
+[2021-05-27 11:20:26,530] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=assignment_2
+AIRFLOW_CTX_TASK_ID=install_deps
+AIRFLOW_CTX_EXECUTION_DATE=2021-05-27T11:20:22.944851+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-05-27T11:20:22.944851+00:00
+[2021-05-27 11:20:26,532] {subprocess.py:52} INFO - Tmp dir root location: 
+ /tmp
+[2021-05-27 11:20:26,533] {subprocess.py:63} INFO - Running command: ['bash', '-c', 'pip install sqlalchemy matplotlib sklearn']
+[2021-05-27 11:20:26,575] {subprocess.py:75} INFO - Output:
+[2021-05-27 11:20:28,268] {subprocess.py:79} INFO - WARNING: The directory '/home/***/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+[2021-05-27 11:20:28,274] {subprocess.py:79} INFO - Defaulting to user installation because normal site-packages is not writeable
+[2021-05-27 11:20:28,469] {subprocess.py:79} INFO - Requirement already satisfied: sqlalchemy in /home/***/.local/lib/python3.6/site-packages (1.3.24)
+[2021-05-27 11:20:29,913] {subprocess.py:79} INFO - Collecting matplotlib
+[2021-05-27 11:20:30,250] {subprocess.py:79} INFO -   Downloading matplotlib-3.3.4-cp36-cp36m-manylinux1_x86_64.whl (11.5 MB)
+[2021-05-27 11:20:32,612] {subprocess.py:79} INFO - Collecting sklearn
+[2021-05-27 11:20:32,679] {subprocess.py:79} INFO -   Downloading sklearn-0.0.tar.gz (1.1 kB)
+[2021-05-27 11:20:33,726] {subprocess.py:79} INFO - Requirement already satisfied: numpy>=1.15 in /home/***/.local/lib/python3.6/site-packages (from matplotlib) (1.19.5)
+[2021-05-27 11:20:33,794] {subprocess.py:79} INFO - Collecting cycler>=0.10
+[2021-05-27 11:20:33,858] {subprocess.py:79} INFO -   Downloading cycler-0.10.0-py2.py3-none-any.whl (6.5 kB)
+[2021-05-27 11:20:35,152] {subprocess.py:79} INFO - Collecting pillow>=6.2.0
+[2021-05-27 11:20:35,290] {subprocess.py:79} INFO -   Downloading Pillow-8.2.0-cp36-cp36m-manylinux1_x86_64.whl (3.0 MB)
+[2021-05-27 11:20:36,248] {subprocess.py:79} INFO - Collecting kiwisolver>=1.0.1
+[2021-05-27 11:20:36,316] {subprocess.py:79} INFO -   Downloading kiwisolver-1.3.1-cp36-cp36m-manylinux1_x86_64.whl (1.1 MB)
+[2021-05-27 11:20:36,476] {subprocess.py:79} INFO - Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.3 in /home/***/.local/lib/python3.6/site-packages (from matplotlib) (2.4.7)
+[2021-05-27 11:20:36,479] {subprocess.py:79} INFO - Requirement already satisfied: python-dateutil>=2.1 in /home/***/.local/lib/python3.6/site-packages (from matplotlib) (2.8.1)
+[2021-05-27 11:20:36,484] {subprocess.py:79} INFO - Requirement already satisfied: six in /home/***/.local/lib/python3.6/site-packages (from cycler>=0.10->matplotlib) (1.16.0)
+[2021-05-27 11:20:36,914] {subprocess.py:79} INFO - Collecting scikit-learn
+[2021-05-27 11:20:36,982] {subprocess.py:79} INFO -   Downloading scikit_learn-0.24.2-cp36-cp36m-manylinux2010_x86_64.whl (22.2 MB)
+[2021-05-27 11:20:40,404] {subprocess.py:79} INFO - Collecting scipy>=0.19.1
+[2021-05-27 11:20:40,470] {subprocess.py:79} INFO -   Downloading scipy-1.5.4-cp36-cp36m-manylinux1_x86_64.whl (25.9 MB)
+[2021-05-27 11:20:44,035] {subprocess.py:79} INFO - Collecting joblib>=0.11
+[2021-05-27 11:20:44,103] {subprocess.py:79} INFO -   Downloading joblib-1.0.1-py3-none-any.whl (303 kB)
+[2021-05-27 11:20:44,507] {subprocess.py:79} INFO - Collecting threadpoolctl>=2.0.0
+[2021-05-27 11:20:44,573] {subprocess.py:79} INFO -   Downloading threadpoolctl-2.1.0-py3-none-any.whl (12 kB)
+[2021-05-27 11:20:44,595] {subprocess.py:79} INFO - Building wheels for collected packages: sklearn
+[2021-05-27 11:20:44,596] {subprocess.py:79} INFO -   Building wheel for sklearn (setup.py): started
+[2021-05-27 11:20:45,526] {subprocess.py:79} INFO -   Building wheel for sklearn (setup.py): finished with status 'done'
+[2021-05-27 11:20:45,526] {subprocess.py:79} INFO -   Created wheel for sklearn: filename=sklearn-0.0-py2.py3-none-any.whl size=1316 sha256=c1c37c0ea53668bdae5dbf889e6d4ef372defa83e6311020ae6e5ccdb6c5f5c4
+[2021-05-27 11:20:45,526] {subprocess.py:79} INFO -   Stored in directory: /tmp/pip-ephem-wheel-cache-twe_l8j1/wheels/23/9d/42/5ec745cbbb17517000a53cecc49d6a865450d1f5cb16dc8a9c
+[2021-05-27 11:20:45,529] {subprocess.py:79} INFO - Successfully built sklearn
+[2021-05-27 11:20:52,856] {subprocess.py:79} INFO - Installing collected packages: threadpoolctl, scipy, joblib, scikit-learn, pillow, kiwisolver, cycler, sklearn, matplotlib
+[2021-05-27 11:21:04,481] {subprocess.py:79} INFO - Successfully installed cycler-0.10.0 joblib-1.0.1 kiwisolver-1.3.1 matplotlib-3.3.4 pillow-8.2.0 scikit-learn-0.24.2 scipy-1.5.4 sklearn-0.0 threadpoolctl-2.1.0
+[2021-05-27 11:21:04,817] {subprocess.py:79} INFO - WARNING: You are using pip version 21.1.1; however, version 21.1.2 is available.
+[2021-05-27 11:21:04,817] {subprocess.py:79} INFO - You should consider upgrading via the '/usr/local/bin/python -m pip install --upgrade pip' command.
+[2021-05-27 11:21:04,976] {subprocess.py:83} INFO - Command exited with return code 0
+[2021-05-27 11:21:05,004] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=assignment_2, task_id=install_deps, execution_date=20210527T112022, start_date=20210527T112026, end_date=20210527T112105
+[2021-05-27 11:21:05,038] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-05-27 11:21:05,072] {local_task_job.py:151} INFO - Task exited with return code 0
