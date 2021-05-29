@@ -46,5 +46,7 @@ the csv and the image will be stored in [data](./data) folder
 while for db use the following connection
 
 `jdbc:postgresql://localhost:5432/airflow`
+
 user/password airflow/airflow
+
 ![postgres](postgres.png)
